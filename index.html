@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <header></header>
   <body>
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <img src="pic_trulli.jpg" alt="Italian Trulli">
+    <h2>My First JavaScript</h2>
 
+    <input type="text" id="name" />
+
+    <button type="button" onclick="getName()">Get My Name</button>
+
+    <p id="demo"></p>
+    <script>
+      function getName() {
+        var name = document.getElementById("name").value;
+
+        document.getElementById("demo").innerHTML = "My name is " + name;
+      }
+    </script>
   </body>
 </html>
